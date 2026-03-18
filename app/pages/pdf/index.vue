@@ -10,8 +10,8 @@ const features: pdf_feature[] = pdfFeatures
     <h1>this is pdf page</h1>
     <NuxtLink to="/" class="my-4">back to home</NuxtLink>
     <ul class="flex flex-row items-stretch gap-4 mt-6">
-      <li v-for="(feature, index) in features" :key="index" class="border rounded-lg p-4 basis-4/5">
-        <NuxtLink :to="`/pdf` + feature.link" class="h-full w-full">
+      <li v-for="(feature, index) in features" :key="index" class="border rounded-lg basis-4/5">
+        <NuxtLink :to="`/pdf` + feature.link" class=" block h-full p-4 hover:bg-zinc-700 rounded-lg">
           <CardPdf :feature="feature" />
         </NuxtLink>
       </li>
